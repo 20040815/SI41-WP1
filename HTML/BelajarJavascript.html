@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script type = "text/javascript">
+        function pesan1(){
+            alert('halo dunia');
+        }
+
+        function pesan2(Nama){
+            alert("Hallo" + Nama);
+        }
+
+        function tampilPesan(){
+            return "Sistem informasi MDP";
+        }
+
+        function validasiUmur(){
+            let umur = parseInt(document.getElementById("umur").value);
+            
+            document.getElementById("info").innerHTML = umur;
+        }
+
+        </script>
+</head>
+
+<body>
+    <h1 id = "studi"> program studi : Sistem Informasi </h1>
+
+    <script type = "text/javascript">
+        document.write("<h1>Belajar Javascript</h1>");
+        let varA = "Budi Raharjo";
+        document.write("Nama Penulis" + varA);
+
+        console.log("varA "+ varA);
+
+        document.getElementById("studi").innerHTML = "Universitas MDP";
+        document.getElementById("studi").style.fontSize = "60px";
+        document.write("<br>Metode TampilPesan() = " + tampilPesan());
+
+    </script>
+
+    <br />
+
+    <button onclick="pesan1()">Tampil pesan1</button>
+    <button onclick="pesan2('Dewi Soekarno')">Tampil pesan2</button>
+    <br />
+    Validasi umur : <input type = "text" id = "umur"/>
+    <br />
+    <button>Validasi</button>
+    <p id ="info">Cek Validasi</p>
+</body>
+</html>
